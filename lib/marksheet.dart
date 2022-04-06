@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() => runApp(const MaterialApp(home: MyHome()));
-
-class MyHome extends StatefulWidget {
-  const MyHome({Key? key}) : super(key: key);
+class MarkSheet extends StatefulWidget {
+  const MarkSheet({Key? key}) : super(key: key);
 
   @override
-  State<MyHome> createState() => _MyHomeState();
+  State<MarkSheet> createState() => _MarkSheetState();
 }
 
-class _MyHomeState extends State<MyHome> {
+class _MarkSheetState extends State<MarkSheet> {
   late TextEditingController _controller, _controller2, _m1, _m2, _m3;
   int total = 0;
   double percentage = 0.0;
