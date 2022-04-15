@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:myapp/navigatiodrawer.dart';
 
 class MarkSheet extends StatefulWidget {
   const MarkSheet({Key? key}) : super(key: key);
+  static const String routeName = 'MarkSheet';
 
   @override
   State<MarkSheet> createState() => _MarkSheetState();
@@ -56,6 +58,7 @@ class _MarkSheetState extends State<MarkSheet> {
           title: const Text("MSCIT"),
           backgroundColor: Colors.grey[700],
         ),
+        drawer: const navigationdrawer(),
         body: Column(
           children: [
             Container(
