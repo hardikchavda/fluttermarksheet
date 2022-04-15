@@ -7,7 +7,7 @@ class HomeApp extends StatelessWidget {
   const HomeApp({Key? key}) : super(key: key);
   static const String routeName = 'HomeApp';
 
-  static const appTitle = 'Drawer Demo';
+  static const appTitle = 'Welcome';
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: const Center(
-        child: Text('My Page!'),
+        child: Text('Home!'),
       ),
       drawer: const navigationdrawer(),
     );
